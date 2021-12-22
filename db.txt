@@ -1,0 +1,21 @@
+String ans=String.valueOf(marks);
+        txtmk.setText(ans);
+        System.out.println(ans);
+         try{
+            String query = " INSERT INTO `result`(`enm`, `sid`, `fnm`, `marks`) VALUES (?,?,?,?)";
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/iq_test","root","");
+            pst = con.prepareStatement(query);
+           
+            pst.setString(1, txtenm.getText());
+            pst.setString(2, txtsid.getText());
+            pst.setString(3, txtfnm.getText());
+            pst.setString(4,txtmk.getText());
+           
+            
+         
+            JOptionPane.showMessageDialog(null, "Record is Add");
+            
+        }
+        catch(Exception ex){
+            JOptionPane.showMessageDialog(null, ex);    
+               }

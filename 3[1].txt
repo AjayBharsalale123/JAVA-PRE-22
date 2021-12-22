@@ -1,0 +1,164 @@
+#include<iostream>
+
+using namespace std;
+
+class  Personal
+
+{
+
+int  phone;
+
+char name[50];
+
+public: 
+	
+void  accept1()
+
+{
+	
+cout<<"Enter the name of emp=";
+
+cin>>name;
+
+cout<<"Enter the phone number of emp=";
+	
+cin>>phone;
+
+}
+	
+void disp1()
+	
+{
+	
+cout<<"\nName="<<name;
+	
+cout<<"\nPhone no="<<phone;
+	
+}
+
+};
+
+
+class Professional
+
+{
+
+int sal;
+
+char c_name[50];
+
+public:
+	
+void accept2()
+	
+{
+	
+cout<<"\nEnter the salary of emp=";
+	
+cin>>sal;
+	
+cout<<"\nEnter the company name of emp=";
+	
+cin>>c_name;
+	
+}
+	
+void disp2()
+	
+{
+	
+cout<<"\nSalary="<<sal;
+	
+cout<<"\nCompany name="<<c_name;
+	
+}
+
+};
+
+
+class Academic
+
+{
+
+int ssc_mark, hsc_mark;
+
+public:
+	
+void accept3()
+	
+{
+	
+cout<<"\nEnter the SSC marks  of emp=";
+	
+cin>>ssc_mark;
+	
+cout<<"\nEnter the HSC marks of emp=";
+	
+cin>>hsc_mark;
+	
+}
+	
+void disp3()
+	
+{
+	
+cout<<"\nSSC marks="<<ssc_mark;
+	
+cout<<"\nHSC marks="<<hsc_mark;
+
+}
+
+};
+
+
+
+class Biodata: public Personal,public Professional,public Academic
+
+{
+
+public :
+	
+void input()
+	
+{
+
+
+accept1();
+
+accept2();
+	
+accept3();
+	
+}
+	
+void output()
+	
+{
+	
+cout<<"\nAll Biodata of Employee="<<endl;
+	
+disp1();
+	
+disp2();
+	
+disp3();
+	
+}
+
+
+};
+
+
+int main()
+
+{
+
+Biodata b;
+
+b.input();
+
+b.output();
+
+return 0;
+
+}

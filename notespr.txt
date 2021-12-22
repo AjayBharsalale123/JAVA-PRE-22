@@ -1,0 +1,129 @@
+What is deep learning?
+
+Deep learning is a subset of machine learning, which is essentially a neural network with three or more layers. These neural networks attempt to simulate the behavior of the human brain—albeit far from matching its ability—allowing it to “learn” from large amounts of data. While a neural network with a single layer can still make approximate predictions, additional hidden layers can help to optimize and refine for accuracy.
+
+import pyttsx3
+:
+pyttsx3 is a text-to-speech conversion library in Python. Unlike alternative libraries, it works offline and is compatible with both Python 2 and 3. An application invokes the pyttsx3. init() factory function to get a reference to a pyttsx3.
+
+import datetime
+:
+In Python, date and time are not a data type of its own, but a module named datetime can be imported to work with the date as well as time. Datetime module comes built into Python, so there is no need to install it externally. ... These classes provide a number of functions to deal with dates, times and time intervals.
+
+import Web-browser
+:
+The webbrowser module provides a high-level interface to allow displaying Web-based documents to users. Under most circumstances, simply calling the open() function from this module will do the right thing.
+
+import speech_recognition as sr
+:
+If you want to use audio input from microphones, PyAudio is also necessary. If not installed, the library will still work, but Microphone will be undefined.
+
+The official PyAudio builds seem to be broken on Windows. As a result, in the installers folder you will find unofficial PyAudio builds for Windows that actually work. Run the installer corresponding to your Python version to install PyAudio.
+
+On Debain-based distributions such as Ubuntu, you can generally install PyAudio by running sudo apt-get install python-pyaudio python3-pyaudio, which will install it for both Python 2 and Python 3.
+
+On other POSIX-based systems, simply use the packages provided on the downloads page linked above, or compile and install it from source.
+
+import wikipedia
+:
+Wikipedia is a Python library that makes it easy to access and parse data from Wikipedia. Search Wikipedia, get article summaries, get data like links and images from a page, and more. Wikipedia wraps the MediaWiki API so you can focus on using Wikipedia data, not getting it. >>> import wikipedia >>> print wikipedia.
+
+import os
+:
+The OS module in Python provides functions for interacting with the operating system. OS comes under Python's standard utility modules. This module provides a portable way of using operating system dependent functionality. The *os* and *os. path* modules include many functions to interact with the file system.
+
+import smtplib
+:
+Python provides smtplib module, which defines an SMTP client session object that can be used to send mail to any Internet machine with an SMTP or ESMTP listener daemon. Here is a simple syntax to create one SMTP object, which can later be used to send an e-mail − import smtplib smtpObj = smtplib.
+
+import requests
+:
+The requests module allows you to send HTTP requests using Python. The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
+
+import winshell
+:
+The winshell module is a light wrapper around the Windows shell functionality. ... winshell is tested on all versions of Python from 2.4 to 3.2 (2.5+ for context management).
+
+import pyjokes
+:
+Python supports creation of random jokes using one of its libraries. Let us explore it a little more, Pyjokes is a python library that is used to create one-line jokes for programmers. Informally, it can also be referred as a fun python library which is pretty simple to use. Let us see how you can actually use it to perform the required task
+
+import feedparser
+:
+Feedparser is a Python library that parses feeds in all known formats, including. Atom, RSS, and RDF. It runs on Python 2.4 all the way up to 3.3.
+
+import ctypes
+:
+ctypes is a foreign function library for Python. It provides C compatible data types, and allows calling functions in DLLs or shared libraries. It can be used to wrap these libraries in pure Python.
+
+import subprocess
+:
+The subprocess module present in Python(both 2. ... x) is used to run new applications or programs through Python code by creating new processes. It also helps to obtain the input/output/error pipes as well as the exit codes of various commands
+
+import shutil
+:
+It comes under Python's standard utility modules. This module helps in automating process of copying and removal of files and directories. shutil. copyfile() method in Python is used to copy the content of source file to destination file. ... Source and destination must represent a file and destination must be writable.
+
+import time
+:
+time() The time() function returns the number of seconds passed since epoch. For Unix system, January 1, 1970, 00:00:00 at UTC is epoch (the point where time begins). import time seconds = time.time() print("Seconds since epoch =", seconds)
+
+import sys
+:
+The python sys module provides functions and variables which are used to manipulate different parts of the Python Runtime Environment. It lets us access system-specific parameters and functions. import sys. First, we have to import the sys module in our program before running any functions.
+
+import bs4
+:
+Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree. It commonly saves programmers hours or days of work.
+
+import re
+:
+A regular expression is a special sequence of characters that helps you match or find other strings or sets of strings, using a specialized syntax held in a pattern. ... The Python module re provides full support for Perl-like regular expressions in Python. The re module raises the exception re.
+Influenced: Perl
+
+import ec 
+:ec - a cli interface for python modules.
+
+import json
+:
+import json. Serialization is the process of encoding data into JSON format (like converting a Python list to JSON). Deserialization is the process of decoding JSON data back into native objects you can work with (like reading JSON data into a Python list).
+
+import pyowm
+:
+PyOWM is a client Python wrapper library for OpenWeatherMap (OWM) web APIs. It allows quick and easy consumption of OWM data from Python applications via a simple object model and in a human-friendly fashion. PyOWM runs on Python 3.7+
+
+import pandas
+: 
+pandas (all lowercase) is a popular Python-based data analysis toolkit which can be imported using import pandas as pd . It presents a diverse range of utilities, ranging from parsing multiple file formats to converting an entire data table into a NumPy matrix array.
+
+import pywhatkit as kit
+:
+PyWhatKit is a Python library for Sending whatsapp message at certain time, it has ... First import the library using the command import pywhatkit as kit and then ... This function can be used to fetch information about any topic ..
+
+from bs4 import BeautifulSoup
+:
+Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree.
+
+from urllib.request import urlopen
+:
+Urllib module is the URL handling module for python. It is used to fetch URLs (Uniform Resource Locators). It uses the urlopen function and is able to fetch URLs using a variety of different protocols. Urllib is a package that collects several modules for working with URLs, such as: ... parse for parsing URLs.
+
+import urllib.parse 
+:
+Source code: Lib/urllib/parse.py. This module defines a standard interface to break Uniform Resource Locator (URL) strings up in components (addressing scheme, network location, path etc.), to combine the components back into a URL string, and to convert a “relative URL” to an absolute URL given a “base URL.”
+
+import numpy as np
+:
+Numpy provides a large set of numeric datatypes that you can use to construct arrays. Numpy tries to guess a datatype when you create an array, but functions that construct arrays usually also include an optional argument to explicitly specify the datatype. Here is an example: import numpy as np x = np.
+
+from cv2 import cv2
+:
+OpenCV-Python is a library of Python bindings designed to solve computer vision problems. cv2. imread() method loads an image from the specified file. If the image cannot be read (because of missing file, improper permissions, unsupported or invalid format) then this method returns an empty matrix.02
+
+from pylint import epylint as lint
+:
+Take a look at the pylint/epylint.py file which contains two different ways to start Pylint programmatically. ... from pylint.lint import Run Run(['--errors-only', 'myfile.​py']) ... However they all call a subprocess in which python is launched again. ... class WritableObject(object): "dummy output stream for pylint" def ...
+
+import pyautogui
+:
+Pyautogui is a library that allows you to control the mouse and keyboard to do various things. It is a cross-platform GUI automation Python module for human beings. As it is a third party library, we need to install it. pip install pyautogui.
